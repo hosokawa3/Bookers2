@@ -8,6 +8,11 @@
     <td>
       <%= @book.body %>
     </td>
+    <% if @book.user == current_user %>
+    <td>
+      <%= link_to "Destroy", book_path(@book), method: :delete %>
+    <% end %>
+    </td>
   </tr>
   </tbody>
 </table>
