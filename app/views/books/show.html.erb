@@ -3,6 +3,10 @@
   <tbody>
   <tr>
     <td>
+      <%= image_tag @book.user.get_profile_image(100,100) %><br>
+      <%= @book.user.name %>
+    </td>
+    <td>
       <%= @book.title %>
     </td>
     <td>
