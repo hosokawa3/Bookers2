@@ -5,9 +5,9 @@ class ApplicationController < ActionController::Base
     user_path(current_user.id)
   end
 
-  # def after_sign_out_path_for(resourse)
-
-  # end
+  def after_sign_out_path_for(resourse)
+    root_path
+  end
 
   protected
 
