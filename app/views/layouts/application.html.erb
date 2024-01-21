@@ -24,22 +24,30 @@
       <% if user_signed_in? %>
         <div class= "col-1">
         <li>
-          <%= link_to "Home", user_path(current_user.id) %>
+          <%= link_to user_path(current_user.id) do %>
+          <i class="fa-solid fa-house" style="color: #ffffff;">Home</i>
+          <% end %>
         </li>
         </div>
         <div class= "col-1">
         <li>
-          <%= link_to "Users", users_path %>
+          <%= link_to users_path do %>
+          <i class="fa-solid fa-users" style="color: #ffffff;">Users</i>
+          <% end %>
         </li>
         </div>
         <div class= "col-1">
         <li>
-          <%= link_to "Books", books_path %>
+          <%= link_to books_path do %>
+          <i class="fa-solid fa-book-open" style="color: #ffffff;">Books</i>
+          <% end %>
         </li>
         </div>
         <div class= "col-1">
         <li>
-          <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+          <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;">Log out</i>
+          <% end %>
         </li>
         </div>
       <% else %>
