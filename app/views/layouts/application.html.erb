@@ -85,7 +85,10 @@
       </div>
       </div>
     </header>
+    <main>
+      <%= flash[:notice] %>
     <%= yield %>
+    </main>
   </body>
   <footer>
     <div class="container">

@@ -1,3 +1,7 @@
+<div class="container">
+<div class="row">
+<div class="offset-2"></div>
+<div class="col-8">
 <h2>User info</h2>
 <%= form_with model: @user  do |f| %>
   <label for="inputName">Name</label>
@@ -8,3 +12,7 @@
   <%= f.text_area :introduction %>
   <%= f.submit "Update User" %>
 <% end %>
+<div class="offset-2"></div>
+</div>
+</div>
+</div>
